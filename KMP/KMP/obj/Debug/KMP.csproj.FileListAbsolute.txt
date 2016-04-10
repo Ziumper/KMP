@@ -1,0 +1,6 @@
+C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\Dyplomowe\KMP\KMP\KMP\bin\Debug\KMP.exe.config
+C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\Dyplomowe\KMP\KMP\KMP\bin\Debug\KMP.exe
+C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\Dyplomowe\KMP\KMP\KMP\bin\Debug\KMP.pdb
+C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\Dyplomowe\KMP\KMP\KMP\obj\Debug\KMP.csprojResolveAssemblyReference.cache
+C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\Dyplomowe\KMP\KMP\KMP\obj\Debug\KMP.exe
+C:\Users\Tomasz Komoszeski\Documents\Studia\Semestr II\Dyplomowe\KMP\KMP\KMP\obj\Debug\KMP.pdb
