@@ -10,11 +10,12 @@ namespace KMP
     {
         static void Main(string[] args)
         {
-            string s = "ABBBCAASDWQABAABABAABBABBAB";
-            string p = "ABAABAB";
+            string s = "aaaxxxxxxzzzzaaaaeeeaadddaaababaaaadddaaaabbbcccaaabbbaaaccbbbaaabbba";
+            string p = "aabaacab";
             int pp = 0;
             int b = 0;
-
+            int max=0,tmpMax;
+            bool flaga = true;
             Console.WriteLine(p);
             Console.WriteLine(s);
 
@@ -26,20 +27,27 @@ namespace KMP
 
             for(int i = 0; i < s.Length; i++)
             {
-                while ((b > -1) && (p[b] != s[i])) b = KMPNext[b];
-                if (++b == p.Length)
-                { //znalazłem wzorzec;
-                    while (pp < i - b + 1)
-                    {
-                        Console.Write(" ");
-                        pp++;
-                    }
-                    Console.Write("^");
-                    pp++;
+                if (flaga) pp = i;
+                while ((b > -1) && (p[b] != s[i])) {
                     b = KMPNext[b];
+                    if(flaga) pp = b;
+                    flaga = false;
                 }
+                b++;
+                if (b == p.Length)
+                { //znalazłem wzorzec;
+                    //while (pp < i - b + 1)
+                    //{
+                    //    Console.Write(" ");
+                    //    pp++;
+                    //}
+                    //Console.Write("^");
+                    //pp++;
+                    //b = KMPNext[b];
+                }
+                if (b > max)  max = b;
             }
-
+            
             Console.ReadKey();
         }
     }
